@@ -11,7 +11,7 @@
       community.crypto.openssh_keypair:
         path: ~/.ssh/id_rsa
         type: ed25519
-        passphrase:  {{ vault.ssh-key-passphrase }}
+        passphrase:  "{{ ssh-key-passphrase }}"
 
     - name: Homebrew tap
       ansible.builtin.command: brew tap {{ item }}
