@@ -55,7 +55,7 @@
       - "composer"
       - "ctop"
       - "diff-so-fancy"
-      - "docker", link: false
+      - "docker"
       - "wxwidgets"
       - "exa"
       - "exercism"
@@ -94,9 +94,9 @@
       - "nginx"
       - "php@7.4"
       - "pinentry-mac"
-      - "postgresql", restart_service: true
+      - "postgresql"
       - "python-tk@3.9"
-      - "rabbitmq", restart_service: true
+      - "rabbitmq"
       - "re2c"
       - "ripgrep"
       - "rlwrap"
