@@ -24,7 +24,7 @@
 
     - name: Homebrew utils
       community.general.homebrew:
-        name: {{ item }}
+        name: "{{ item }}"
         state: present
       with_items:
       - "act"
@@ -124,7 +124,7 @@
 
   - name: Homebrew casks
     community.general.homebrew:
-      name: {{ item }}
+      name: "{{ item }}"
       state: present
     with_items:
      -  "homebrew/cask/1password"
