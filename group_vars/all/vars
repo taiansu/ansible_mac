@@ -1,2 +1,2 @@
 ---
-ssh_key_passphrase "{{ vault.ssh_key_passphrase }}"
+ssh_key_passphrase: "{{ vault.ssh_key_passphrase }}"
