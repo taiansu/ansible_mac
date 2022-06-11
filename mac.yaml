@@ -7,11 +7,13 @@
         upgrade_all: yes
 
   tasks:
-    - name: Generate an OpenSSH keypair
-      community.crypto.openssh_keypair:
-        path: ~/.ssh/id_rsa
+    - name: Generate an keypair
+      openssh_keypair:
+        path: "~/.ssh/id_rsa"
         type: ed25519
         passphrase:  "{{ ssh-key-passphrase }}"
+        state: present
+      tags: ssh
 
     - name: Homebrew tap
       ansible.builtin.command: brew tap {{ item }}
